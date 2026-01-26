@@ -26,7 +26,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run tests
-        env:
-          PYTHONPATH: src
-        run: pytest -q
+      - name: Run pytest inside CI_CD_test
+        run: |
+          cd CI_CD_test
+          pip install -r requirements.txt
+          PYTHONPATH=src pytest -q
+
