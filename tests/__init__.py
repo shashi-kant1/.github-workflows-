@@ -1,0 +1,1 @@
+# Optional; keeps tests as a package in some setups
