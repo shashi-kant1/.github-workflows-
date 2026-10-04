@@ -7,7 +7,12 @@ jobs:
       steps:
          - name: Print input name on STDOUT
            run: echo $(whoami)
-         
+   Demo_test:
+      runs-on:
+         ubuntu-latest
+      steps:
+         - name: Print input name on STDOUT
+           run: echo $(whoami)         
    
 
     
