@@ -1,0 +1,14 @@
+name: CICD try1
+on: push
+jobs:
+   print-username:
+      runs-on:
+         ubuntu-latest
+      steps:
+         - name: Print input name on STDOUT
+           run: echo $(whoami)
+         
+   
+
+    
+    
