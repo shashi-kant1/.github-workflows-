@@ -1,7 +1,7 @@
 name: CICD try1
 on: push
 jobs:
-   print-username:
+   Demo_build:
       runs-on:
          ubuntu-latest
       steps:
